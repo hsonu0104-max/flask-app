@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/submit"
+  to = "/.netlify/functions/app"
+  status = 200
+
+[functions]
+  node_bundler = "esbuild"
